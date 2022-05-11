@@ -1,9 +1,12 @@
-def add(x, y):
+def add(x:int, y):
     result = x + y
+    print(result)
+    test = f"{x}+{y} = {result}"
     print(result)
 
 
-add(2, 3)  # 5
+add(y=2, x=3)  # 5
+
 
 # -- If a function doesn't have parameter, you can't give it arguments --
 
@@ -12,7 +15,7 @@ def say_hello():
     print("Hello!")
 
 
-say_hello("Bob")  # Error
+#say_hello("Bob")  # Error
 
 # -- But if you add a parameter, then you must give it an argument --
 
@@ -30,7 +33,7 @@ say_hello()  # Error, needs an argument
 
 def say_hello(name):
     print(f"Hello, {name}!")
-
+    test = f"hello, {name}"
 
 say_hello(name="Bob")  # Obvious that this is someone's name
 

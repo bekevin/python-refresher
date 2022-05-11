@@ -1,3 +1,6 @@
+# The Printer class inherits from the Device class, and adds a capacity and remaining_pages attribute,
+# and a print method
+
 class Device:
     def __init__(self, name, connected_by):
         self.name = name
@@ -11,16 +14,11 @@ class Device:
         self.connected = False
 
 
-# printer = Device("Printer", "USB")
-# print(printer)
-
-# We don't want to add printer-specific stuff to Device, so...
 
 
 class Printer(Device):
     def __init__(self, name, connected_by, capacity):
-        # super(Printer, self).__init__(name, connected_by)  - Python2.7
-        super().__init__(name, connected_by)  # Python3+
+        super().__init__(name, connected_by)  
         self.capacity = capacity
         self.remaining_pages = capacity
 
@@ -40,4 +38,4 @@ print(printer)
 printer.print(50)
 print(printer)
 printer.disconnect()
-printer.print(30)  # Error
+printer.print(30)  

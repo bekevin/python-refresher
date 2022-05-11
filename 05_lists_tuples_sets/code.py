@@ -1,6 +1,6 @@
 l = ["Bob", "Rolf", "Anne"]
-t = ("Bob", "Rolf", "Anne")
-s = {"Bob", "Rolf", "Anne"}
+t = ("Bob", "Rolf", "Anne") # can't add or remove elements from a tuple
+s = {"Bob", "Rolf", "Anne"} # can't have duplicates
 
 # Access individual items in lists and tuples using the index.
 
